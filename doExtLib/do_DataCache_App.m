@@ -7,39 +7,14 @@
 //
 
 #import "do_DataCache_App.h"
+static do_DataCache_App* instance;
 
 @implementation do_DataCache_App
-@synthesize ThridPartyID;
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+@synthesize OpenURLScheme;
++(id) Instance
 {
-    return YES;
-}
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    
-}
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    
-}
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    
-}
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    
-}
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    
-}
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation fromThridParty:(NSString*)_id
-{
-    return NO;
-}
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url fromThridParty:(NSString*)_id
-{
-    return NO;
+    if(instance==nil)
+        instance = [[do_DataCache_App alloc]init];
+    return instance;
 }
 @end
