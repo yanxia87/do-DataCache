@@ -85,7 +85,7 @@
 		A44BC69C1AEE008D001580AA /* doScriptEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doScriptEngine.m; sourceTree = "<group>"; };
 		A44BC69D1AEE008D001580AA /* doService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doService.h; sourceTree = "<group>"; };
 		A44BC69E1AEE008D001580AA /* doService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doService.m; sourceTree = "<group>"; };
-		A44BC7B21AEE19CC001580AA /* libdoExtLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdoExtLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A44BC7B21AEE19CC001580AA /* libdataCache.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdataCache.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A1A01C1AF0F82B00D835A5 /* do_Test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = do_Test.json; sourceTree = "<group>"; };
 		CCFAEA231B00322400AED8D5 /* doAssetLaunchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doAssetLaunchImage.h; sourceTree = "<group>"; };
 		CCFAEA241B00322400AED8D5 /* doCallBackTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doCallBackTask.h; sourceTree = "<group>"; };
@@ -229,7 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				A44BC66A1AEE005E001580AA /* Do_Test.app */,
-				A44BC7B21AEE19CC001580AA /* libdoExtLib.a */,
+				A44BC7B21AEE19CC001580AA /* libdataCache.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -426,7 +426,7 @@
 			);
 			name = doExtLib;
 			productName = doExtLib;
-			productReference = A44BC7B21AEE19CC001580AA /* libdoExtLib.a */;
+			productReference = A44BC7B21AEE19CC001580AA /* libdataCache.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -644,7 +644,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = dataCache;
 				SKIP_INSTALL = YES;
 				SYMROOT = build;
 			};
@@ -655,7 +655,7 @@
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = dataCache;
 				SKIP_INSTALL = YES;
 				SYMROOT = build;
 			};
